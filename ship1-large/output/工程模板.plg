@@ -1,0 +1,34 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Project:</h2>
+E:\LAB\无人艇\大船工作文件夹\无人艇源代码\版本3\下位机\三船\Onboard_Control V 2.6 - 1号 - 正反转\Onboard_Control.uvproj
+Project File Date:  11/25/2016
+
+<h2>Output:</h2>
+Build target 'Target 1'
+compiling main.c...
+user\main.c(177): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *"
+user\main.c(178): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *"
+compiling control.c...
+linking...
+Program Size: Code=15412 RO-data=336 RW-data=616 ZI-data=1352  
+FromELF: creating hex file...
+".\output\工程模板.axf" - 0 Error(s), 2 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+user\main.c(177): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *"
+user\main.c(178): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *"
+linking...
+Program Size: Code=15412 RO-data=336 RW-data=616 ZI-data=1352  
+FromELF: creating hex file...
+".\output\工程模板.axf" - 0 Error(s), 2 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+user\main.c(177): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *"
+user\main.c(178): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *"
+linking...
+Program Size: Code=15412 RO-data=336 RW-data=616 ZI-data=1352  
+FromELF: creating hex file...
+".\output\工程模板.axf" - 0 Error(s), 2 Warning(s).
