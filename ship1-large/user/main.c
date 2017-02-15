@@ -248,12 +248,12 @@ int main()
 					int r=(int)(180/(abs(error)*1.5*3.1415926)); //设置每秒转x°，则由误差得出
 					if (error>0)
 					{
-						setCarUpperLeft(134,r); //制导角-实际角，error为正，需要左转。
+						setCarUpperLeft(135,r); //制导角-实际角，error为正，需要左转。
 						
 					}
 					else 
 					{
-						setCarUpperRight(134,r);	//error为负，需要右转。
+						setCarUpperRight(135,r);	//error为负，需要右转。
 					}
 				}
 				else

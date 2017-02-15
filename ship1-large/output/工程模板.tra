@@ -35,7 +35,7 @@
 ### ADS-LD Output File: '.\output\工程模板.axf'
 ### ADS-LD Command File: '.\output\工程模板.lnp'
 ### Checking for dirty Components...
-### Creating CmdFile '.\output\工程模板.lnp', Handle=0x00000600
+### Creating CmdFile '.\output\工程模板.lnp', Handle=0x00000338
 ### Writing '.lnp' file
 ### ADS-LD Command file '.\output\工程模板.lnp' is ready.
 ### ADS-LD: About to start ADS-LD Thread.
