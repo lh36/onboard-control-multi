@@ -43,7 +43,7 @@ extern nmea_msg gpsx; 	//GPS信息
 extern unsigned char Com_data_Recv[10];	 //接收到的上位机的属于本机的命令
 u32 ti_PC6=150;	 
 u32 ti_PC7=150; 	 //=30,1.5ms;=22,1.1ms,=38,1.9ms  周期：16.04ms
-u32 speed=0;
+int speed=0;
 extern union gps_jw_inf	   //经度纬度联合体
 {
 	float gps_f;//浮点型航向角
@@ -168,9 +168,9 @@ int main()
 				int grade;
 				Get[21] = 0;	//舵角信息
 				//速度等级信息提取
-				temp_left=TIM_GetCapture1(TIM3);//左推进等级
-				temp_right=TIM_GetCapture2(TIM3);//右推进等级
-				grade =	abs(150-(temp_left+temp_right)/2);
+				temp_left = abs(150 - TIM_GetCapture1(TIM3));//左推进等级
+				temp_right= abs(150 - TIM_GetCapture2(TIM3));//右推进等级
+				grade =	(temp_left+temp_right)/2;
 				Get[22] =  grade&0xff;
 			
 				//CRC校验

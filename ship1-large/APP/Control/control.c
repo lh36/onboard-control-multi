@@ -51,10 +51,10 @@ unsigned int setCarArcBase(unsigned int speedMMPS,unsigned int radiusMM)
 	unsigned int V1,V2,delta1,delta2;
 	
 	delta1=(int)(0.5/radiusMM*16+0.5);//上下浮动范围为8，整体范围16，后面加0.5是为了四舍五入
-	if(delta1>=10) delta1=10;
+	if(delta1>8) delta1=8;
 	delta2=delta1;
 	
-	if(delta2>=5)  delta2=delta2+28; //越过空白间隙
+	if(delta2>3)  delta2=delta2+27; //越过空白间隙 137为正转初值，165为倒转初值
 
     V1=	speedMMPS - delta1; //脉宽减小，正向加速
 	V2=	speedMMPS + delta2; //脉宽增大，减速，直至反向
